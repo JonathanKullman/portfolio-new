@@ -6,7 +6,7 @@ import { RevealY } from './RevealY'
 
 const Grid = () => {
   return (
-    <section id='about' className='md:py-20 md:pt-28'>
+    <section id='about' className='md:py-20 md:pt-28 relative'>
     <RevealY duration={0.5} startPos={10} delay={1} once={true}>
 
         <BentoGrid className='w-full '>

@@ -4,26 +4,12 @@ import { Spotlight } from "./ui/spotlight";
 import MagicButton from "./ui/magic-button";
 import { FaDownload,  } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import { SparklesCore } from "./ui/sparkles";
 import { RevealY } from "./ui/RevealY";
-import { RevealX } from "./ui/RevealX";
 
 const Hero = () => {
   return (
     
-    <div className="pb-20 md:pb-28 md:pt-16 ">
-      <div className="w-full absolute inset-0 h-screen">
-        {/* <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1}
-          particleDensity={50}
-          className="w-full h-full z-40"
-          particleColor="#7042C8"
-        /> */}
-      </div>
-      
+    <div className="pb-20 md:pb-28 md:pt-16 relative">
       <div>
        
         <Spotlight

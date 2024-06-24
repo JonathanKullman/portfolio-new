@@ -11,8 +11,12 @@ import {
 import { RevealY } from "./RevealY";
 
 export const AnimatedTooltip = ({
+  startPosi,
+  delayStart,
   items,
 }: {
+  delayStart: number;
+  startPosi: number;
   items: {
     id: number;
     name: string;
@@ -50,7 +54,7 @@ export const AnimatedTooltip = ({
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-           <RevealY duration={0.5} startPos={-20} delay={0.8} once={true}>
+           <RevealY duration={0.5} startPos={startPosi} delay={delayStart} once={true}>
           {hoveredIndex === item.id && (
             <motion.div
               initial={{ opacity: 0, y: 20, scale: 0.6 }}
@@ -72,7 +76,7 @@ export const AnimatedTooltip = ({
               }}
               className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs  flex-col items-center justify-center bg-black dark:bg-white  z-50 shadow-xl px-4 py-2"
             >
-              <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px " />
+              <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px bg-gradient-to-r from-transparent via-violet-500 to-transparent h-px " />
               <div className="absolute left-10 w-[40%] z-30 -bottom-px bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px " />
               <div className="font-bold text-white dark:text-black relative z-30 text-base">
                 {item.name}
@@ -88,7 +92,7 @@ export const AnimatedTooltip = ({
                 width={30}
                 src={item.image}
                 alt={item.name}
-                className="invert opacity-95 hover:opacity-80 group-hover:scale-105 relative border-none transition duration-300 dark:invert-0"
+                className="invert opacity-100 hover:opacity-80 group-hover:scale-105 relative transition duration-300"
               />
           </a>
           </RevealY>

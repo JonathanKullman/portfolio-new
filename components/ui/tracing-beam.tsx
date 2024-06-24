@@ -1,4 +1,3 @@
-'use client';
 import React, { useEffect, useRef, useState } from "react";
 import {
   motion,
@@ -31,6 +30,8 @@ export const TracingBeam = ({
     }
   }, []);
 
+  console.log("className:", className);
+
   const y1 = useSpring(
     useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
     {
@@ -49,8 +50,10 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-full max-w-4xl mx-auto h-full", className)}
+      className={cn("relative w-full max-w-4xl mx-auto h-full", className)} // Ensure this container has a relative position
+      
     >
+      
       <div className="absolute -left-4 md:-left-20 top-3">
         <motion.div
           transition={{
@@ -76,7 +79,7 @@ export const TracingBeam = ({
               borderColor:
                 scrollYProgress.get() > 0 ? "black" : "var(--blue-400)",
             }}
-            className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
+            className="h-2 w-2 rounded-full border border-neutral-300 bg-white"
           />
         </motion.div>
         <svg

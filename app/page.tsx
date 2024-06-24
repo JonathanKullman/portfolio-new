@@ -16,11 +16,11 @@ export default function Home() {
         <Navbar />
         <FloatingNav navItems={navItems} />
         <Hero />
-        <Grid />
+         <Grid />
         <Experience />
         <Skills />
         <Projects />
-        <Footer />
+       <Footer />
       </div>
     </main>
   );

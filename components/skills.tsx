@@ -5,16 +5,17 @@ import React from "react";
 import { companies } from "@/data";
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
 import { RevealY } from "./ui/RevealY";
+import { RevealX } from "./ui/RevealX";
 
 const Skills = () => {
   return (
-    <section id="technologies" className=" max-md:py-16 py-28 flex flex-col">
-      <RevealY duration={0.7} startPos={0} delay={0} once={true}>
+    <section id="technologies" className=" max-md:py-16 py-28 flex flex-col relative">
+      <RevealX duration={1.4} startPos={-20} delay={0} once={true}>
       <h1 className="heading text-sm">
         Technologies
       </h1>
-      </RevealY>
-      <RevealY duration={0.7} startPos={-10} delay={0.2} once={true}>
+      </RevealX>
+      <RevealY duration={1.4} startPos={0} delay={0.3} once={true}>
       <HeroHighlight  className="text-center pt-2">
       
         Technologies and Languages I am Most&nbsp; 

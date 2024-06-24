@@ -1,11 +1,31 @@
-"use client";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
 const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
   ssr: false,
 });
+
+interface Arc {
+  order: number;
+  startLat: number;
+  startLng: number;
+  endLat: number;
+  endLng: number;
+  arcAlt: number;
+  color: string;
+}
+
+const sanitizeArcData = (arc: Arc): Arc => {
+  return {
+    order: arc.order || 0,
+    startLat: Number.isFinite(arc.startLat) ? arc.startLat : 0,
+    startLng: Number.isFinite(arc.startLng) ? arc.startLng : 0,
+    endLat: Number.isFinite(arc.endLat) ? arc.endLat : 0,
+    endLng: Number.isFinite(arc.endLng) ? arc.endLng : 0,
+    arcAlt: Number.isFinite(arc.arcAlt) ? arc.arcAlt : 0.1,
+    color: arc.color || "#ffffff",
+  };
+};
 
 export function GlobeDemo() {
   const globeConfig = {
@@ -30,8 +50,9 @@ export function GlobeDemo() {
     autoRotate: true,
     autoRotateSpeed: 0.5,
   };
+
   const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
-  const sampleArcs = [
+  const sampleArcs: Arc[] = [
     {
       order: 1,
       startLat: -19.885592,
@@ -39,7 +60,7 @@ export function GlobeDemo() {
       endLat: -22.9068,
       endLng: -43.1729,
       arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 1,
@@ -392,15 +413,33 @@ export function GlobeDemo() {
       arcAlt: 0.3,
       color: colors[Math.floor(Math.random() * (colors.length - 1))],
     },
+    // Add other data points here
   ];
 
+  const cleanSampleArcs = sampleArcs.map(sanitizeArcData);
+
+  useEffect(() => {
+    const originalConsoleError = console.error;
+    console.error = (...args) => {
+      if (typeof args[0] === 'string' && args[0].includes('THREE.BufferGeometry.computeBoundingSphere()')) {
+        // Suppress this specific warning
+        return;
+      }
+      originalConsoleError.apply(console, args);
+    };
+
+    return () => {
+      // Restore original console.error when component unmounts
+      console.error = originalConsoleError;
+    };
+  }, []);
+
   return (
-    <div className="flex items-center justify-center 
-    absolute -left-5 top-44 md:top-44 w-full h-full">
+    <div className="flex items-center justify-center absolute -left-5 top-44 md:top-44 w-full h-full">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden px-4 h-96">
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
         <div className="absolute w-full h-72 md:h-full z-10">
-          <World data={sampleArcs} globeConfig={globeConfig} />;
+          <World data={cleanSampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
     </div>

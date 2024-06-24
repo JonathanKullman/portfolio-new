@@ -120,7 +120,7 @@ export const navItems = [
     id: 1,
     name: "LinkedIn",
     designation: "",
-    image: "/linkedin.svg",
+    image: "/linkedin_icon.svg",
     link: "https://www.linkedin.com/in/jonathankullman/",
       
 },
@@ -129,7 +129,7 @@ export const navItems = [
     id: 2,
     name: "GitHub",
     designation: "",
-    image: "/github_white.svg",
+    image: "/github_icon.svg",
     link: "https://github.com/JonathanKullman",
       
 },

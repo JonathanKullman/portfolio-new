@@ -106,3 +106,7 @@
     background-position: 0% 50%;
   }
 }
+
+.container {
+  position: relative; /* or position: fixed; or position: absolute; */
+}
