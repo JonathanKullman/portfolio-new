@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Developer Portfolio
 
-First, run the development server:
+Welcome to my developer portfolio! Crafted with Next.js for robust functionality, styled using Tailwind CSS for sleek design, and animated with Framer Motion for enhanced interactivity, this showcase highlights my skills, projects, and professional journey.
+
+
+## Features
+
+- **Animated onScroll effects using Framer motion.**
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Hero Section:** The prominent introductory section of my portfolio.
+- **Highlight section:** Displays my highlighted achievement and other info.
+- **Experience section:** I outline my relevant projects, coding achievements, and development roles to demonstrate my proficiency and expertise as a developer.
+- **Skills Section:** A comprehensive list of my technical skills.
+- **Projects Section:** Detailed descriptions of my projects with links to live demos.
+- **Contact Section:** Visitors can reach out to me by getting redirected to preferred mailing service.
+
+
+## Tech Stack
+
+- **Next.js:** A React framework for server-side rendering and static site generation.
+- **TypeScript:** A statically typed superset of JavaScript that enhances code quality and developer productivity by providing advanced type checking capabilities.
+- **Tailwind CSS:** A utility-first CSS framework for styling.
+- **React:** A JavaScript library for building user interfaces.
+- **Node.js:** Backend environment for server-side JavaScript execution.
+- **Vercel:** Hosting and deployment platform for the application.
+
+
+
+
+## Authors
+
+- [@JonathanKullman](https://www.linkedin.com/in/jonathankullman/)
+
+
+## Setup and Installation
+
+To run this project locally, follow these steps:
+
+#### 1. Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/JonathanKullman/portfolio-new.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm install
+```
+#### 3. Run the development server 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+  npm run dev
+```
 
-## Learn More
+- Open http://localhost:3000 in your browser to see the application.
+    
+## Demo
 
-To learn more about Next.js, take a look at the following resources:
+- https://jonathankullman.vercel.app/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://jonathankullman.vercel.app/)
 
-## Deploy on Vercel
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonathankullman/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Contact
+
+
+If you have any questions or would like to get in touch, feel free to contact me:
+
+- **Email:** Jontekull@gmail.com
+Thank you for visiting my portfolio!
+
