@@ -38,7 +38,7 @@ const Footer = () => {
     <RevealY duration={1.2} startPos={0} delay={0.8} once={true}>
         <a className="max-md:pt-5" href="mailto:jontekull@gmail.com">
           <MagicButton
-            title="Let's get in touch"
+            title="Let&apos;s get in touch"
             icon={<FaLocationArrow />}
             position="right"
             
