@@ -22,7 +22,7 @@ const Footer = () => {
       <div className="flex flex-col items-center">
       <RevealY duration={1.2} startPos={30} delay={0} once={true}>
         <h1 className="heading lg:max-w-[45vw]">
-        Interested in <span className="animated-text">work opportunities</span>? I'd <span className="animated-text">love</span> to hear from you!
+        Interested in <span className="animated-text">work opportunities</span>? I&apos;d <span className="animated-text">love</span> to hear from you!
         </h1>
         </RevealY>
         <HeroHighlight  className="text-center my-5">
