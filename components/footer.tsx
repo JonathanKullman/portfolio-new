@@ -46,7 +46,7 @@ const Footer = () => {
         </a>
         </RevealY>
       </div>
-      <div className="flex mt-20 md:mt-40 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-20 md:mt-40 md:flex-row flex-col justify-between items-center text-center">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2024 Jonathan Kullman. All Rights Reserved.
         </p>
