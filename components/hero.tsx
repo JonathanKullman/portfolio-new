@@ -48,7 +48,6 @@ const Hero = () => {
 
         <RevealY duration={0.5} startPos={-20} delay={0.2} once={true}>
         <div className="flex font-mono text-2xl sm:text-3xl md:text-4xl xl:text-5xl ">
-          Junior&nbsp;
           <TypeAnimation
             className="animated-text font-mono"
             sequence={[
@@ -70,7 +69,7 @@ const Hero = () => {
       </div>
       <div className="flex justify-center relative">
       <RevealY duration={0.5} startPos={20} delay={0.6} once={true}>
-      <a href="https://drive.usercontent.google.com/u/0/uc?id=1OfzESTG0ej1t51EPl1ViXYHKzKt12L1K&export=download"
+      <a href="https://drive.google.com/file/d/1l2QQdPUiW0Cv4EdLzS52JuU8LuMJfKA1/view?usp=sharing"
         target="_blank">      
           <MagicButton
           title='Download CV'

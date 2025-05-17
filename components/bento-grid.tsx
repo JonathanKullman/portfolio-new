@@ -120,7 +120,7 @@ export const BentoGridItem = ({
         >
           <RevealY duration={0.8} startPos={20} delay={0.2} once={true}>
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-semibold z-10`}
+            className={`font-sans text-lg lg:text-3xl max-w-xl font-semibold z-10`}
           >
             {title}
           </div>

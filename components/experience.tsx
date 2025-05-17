@@ -10,8 +10,8 @@ type Props = {};
 const words = ["Experiences", "Timeline"];
 
 const dummyContent = [
-  {
-    title: "Freelancing As Webdeveloper | 2024",
+   {
+    title: "Software Developer | Nov 2024 - Present",
     description: (
       <>
         <div className="flex flex-col">
@@ -25,10 +25,36 @@ const dummyContent = [
               display: "inline-block", // Ensures gradient respects text size
             }}
           >
-            Quicksleek Co-Founder
+            Riverty AB
           </p>
           <p className="font-sans">
-            Co-founded a project creating modern, responsive, SEO-friendly
+            Working as a fullstack developer with responsibilities spanning both backend and frontend development. 
+            Communicates and delivers solutions in both Swedish and English as part of a cross-functional team.
+          </p>
+        </div>
+      </>
+    ),
+    frameworks: ["C#", ".NET", "SQL", "Blazor", "Git", "..."],
+  },
+  {
+    title: "Freelance/Hobby Project | 2024",
+    description: (
+      <>
+        <div className="flex flex-col">
+          <p
+            className="font-bold font-sans mb-2 text-lg md:text-xl"
+            style={{
+              backgroundImage: "linear-gradient(to right, #fff, #6251ff)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+              display: "inline-block", // Ensures gradient respects text size
+            }}
+          >
+            Quicksleek
+          </p>
+          <p className="font-sans">
+            a hobby project focused on creating modern, responsive, SEO-friendly
             websites using Next.js, Tailwind CSS, and React.
           </p>
         </div>

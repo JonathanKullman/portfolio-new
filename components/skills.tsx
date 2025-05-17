@@ -39,7 +39,7 @@ const Skills = () => {
           <img
             src={company.img}
             alt={company.name}
-            className="md:w-24 w-24"
+            className="md:w-20 w-20"
           />
         </div>
       </RevealY>

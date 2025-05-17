@@ -10,17 +10,17 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "My latest project involves starting a freelance business, quicksleek.se, with two friends.",
-      description: "Our goal is to create sleek, modern and SEO-friendly websites specifically for smaller local companies here in Sweden.",
+      title: "Currently Employed as a Software Developer at Riverty AB",
+      description: "As part of the development team at Riverty AB, I work on building reliable, scalable software that powers modern financial services. I focus on writing clean code, enhancing developer experience, and delivering user-friendly solutions.",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-      imgClassName: "w-full h-full",
+      imgClassName: "w-full h-full object-contain",
       titleClassName: "justify-end",
-      img: "/quicksleek_mockup.png",
+      img: "/Riverty_macbook1.png",
       spareImg: "",
     },
     {
       id: 2,
-      title: "I am flexible and available for work, whether remote or on-site.",
+      title: "I am flexible and available for work, both remote or on-site.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -88,29 +88,35 @@ export const navItems = [
     },
     {
       id: 4,
+      name: "blazor",
+      img: "/blazor.svg",
+    },
+    {
+      id: 5,
       name: "next",
       img: "/next.svg",
     },
     {
-      id: 5,
+      id: 6,
       name: "react",
       img: "/react.svg",
     },
     {
-      id: 6,
+      id: 7,
       name: "tailwindcss",
       img: "/tailwindcss.svg",
     },
     {
-      id: 7,
+      id: 8,
       name: "typescript",
       img: "/typescript.svg",
     },
     {
-      id: 8,
+      id: 9,
       name: "git",
       img: "/git.svg",
     },
+
    
   ];
   
