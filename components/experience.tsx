@@ -54,8 +54,7 @@ const dummyContent = [
             Quicksleek
           </p>
           <p className="font-sans">
-            a hobby project focused on creating modern, responsive, SEO-friendly
-            websites using Next.js, Tailwind CSS, and React.
+            A hobby project dedicated to building modern, responsive, and SEO-optimized websites using Next.js, Tailwind CSS, and React.
           </p>
         </div>
       </>
