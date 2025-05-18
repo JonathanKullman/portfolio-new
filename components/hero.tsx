@@ -40,7 +40,7 @@ const Hero = () => {
               I&apos;m <br />
             </span>
             <span className="animated-text text-7xl md:text-8xl font-mono">
-              Jonathan
+              Jonathan Kullman
             </span>
           </div>
           </RevealY>
